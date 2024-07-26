@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <link rel="stylesheet" href="./output.css">
     <title>Travel hero</title>
 </head>
+
 <body>
     <header class=" md:max-w-screen-xl min-h-screen md:mx-auto mx-4">
         <nav class="mt-12 flex justify-between items-center">
@@ -16,20 +18,24 @@
             </div>
             <i class="fa fa-times hidden" aria-hidden="true"></i>
             <ul class="md:flex md:gap-11 hidden">
-                <li><a class=" text-orange-500 text-lg hover:text-orange-600 hover:duration-150 active:text-orange-600" href="">Home</a></li>
+                <li><a class=" text-orange-500 text-lg hover:text-orange-600 hover:duration-150 active:text-orange-600"
+                        href="">Home</a></li>
                 <li><a class=" text-zinc-700 text-lg hover:text-orange-600 hover:duration-150" href="">Packages</a></li>
-                <li><a class=" text-zinc-700 text-lg hover:text-orange-600 hover:duration-150" href="">Testimonial</a></li>
+                <li><a class=" text-zinc-700 text-lg hover:text-orange-600 hover:duration-150" href="">Testimonial</a>
+                </li>
                 <li><a class=" text-zinc-700 text-lg hover:text-orange-600 hover:duration-150" href="">Blog</a></li>
                 <li><a class=" text-zinc-700 text-lg hover:text-orange-600 hover:duration-150" href="">Contact</a></li>
             </ul>
-            <i class="fa fa-bars text-2xl" aria-hidden="true"></i>
+            <i class="fa fa-bars text-2xl md:hidden" aria-hidden="true"></i>
         </nav>
-        <div class="bg-[url('./images/banner.png')] bg-no-repeat bg-center bg-cover min-h-screen mt-12 rounded-2xl flex flex-col items-center justify-center">
-                <h1 class=" text-white md:text-7xl text-3xl font-extrabold text-center mb-6">Explore Your Travel</h1>
-                <p class="text-white text-sm md:text-base text-center mb-12">Dolor sit amet consectetur. Nullam suspendisse vitae ultricies dolor adipiscing. In et odio<br> enim ac quis sapien urna eu phasellus.</p>
+        <div
+            class="bg-[linear-gradient(to_right_bottom,rgba(0,0,0,0.6),rgba(255,255,255,0.2)),url('./images/banner.png')] bg-no-repeat bg-center bg-cover min-h-screen mt-12 rounded-2xl flex flex-col items-center justify-center">
+            <h1 class=" text-white md:text-7xl text-3xl font-extrabold text-center mb-6">Explore Your Travel</h1>
+            <p class="text-white text-sm md:text-base text-center mb-12">Dolor sit amet consectetur. Nullam suspendisse
+                vitae ultricies dolor adipiscing. In et odio<br> enim ac quis sapien urna eu phasellus.</p>
 
-                <form action="" class="bg-slate-100 bg-opacity-30  rounded-lg">
-                    <div class="grid md:grid-cols-4 w-full md:gap-14 gap-6 p-7 ">
+            <form action="" class="bg-slate-100 bg-opacity-30  rounded-lg">
+                <div class="grid md:grid-cols-4 w-full md:gap-14 gap-6 p-7 ">
                     <div>
                         <input class="w-52 h-14 px-3 rounded-lg focus:outline-none" type="text" placeholder="Where go">
                     </div>
@@ -43,10 +49,101 @@
                             <option value="">Select type</option>
                         </select>
                     </div>
-                    <button class="btn-primary">Find now</button>
+                    <button class="btn-primary w-52 "><i class="fa fa-search px-1" aria-hidden="true"></i> Find
+                        now</button>
                 </div>
-                </form>
+            </form>
         </div>
     </header>
+    <main>
+        <!-- popular tour section -->
+        <section
+            class=" max-w-screen-xl min-h-screen md:mx-auto mx-4 mt-24 grid md:grid-cols-2 grid-cols-1 md:gap-52 gap-12">
+            <div>
+                <h3 class=" text-4xl font-extrabold mb-6">Our Popular Tours</h3>
+                <p class="text-neutral-500">Dolor sit amet consectetur. Diam volutpat neque habitasse pharetra odio sit
+                    massa. Sodales dictumst nec nibh pellentesque.</p>
+                <ul class="text-neutral-500 my-6">
+                    <li class="list-disc ml-4 mb-4">Tempus euismod lacus mauris dignissim quis in ultrices. Magna nullam
+                        odio neque diam. Sociis erat at .</li>
+                    <li class="list-disc ml-4 mb-4">Adipiscing ornare pellentesque mauris volutpat tortor vitae platea
+                        porta lacus. Lectus suspendisse nullam.</li>
+                    <li class="list-disc ml-4 mb-4"> Accumsan eget et turpis praesent lorem egestas enim elit bibendum.
+                        Risus at in.</li>
+                </ul>
+                <p class="text-neutral-500 mb-8 ">Amet consectetur. Vulputate commodo felis molestie risus
+                    ornare nulla amet et. Libero commodo sagittis dignissim adipiscing quis. Habitant adipiscing risus
+                    natoque aliquet. Id bibendum nunc senectus semper tincidunt. </p>
+                <button class="btn-primary">Read More</button>
+            </div>
+            <div>
+                <img class="w-full" src="./Images/mountain.png" alt="">
+            </div>
+        </section>
+        <!-- your destination -->
+        <section class="max-w-screen-xl min-h-screen md:mx-auto mt-6 md:mt-0 mx-4">
+            <div class="text-center">
+                <h3 class="text-4xl font-extrabold mb-6">Choose Your Destination</h3>
+                <p class="text-neutral-500">Dolor sit amet consectetur. Diam volutpat neque habitasse pharetra odio sit
+                    massa.<br> Sodales dictumst nec nibh pellentesque.</p>
+            </div>
+            <div class="mt-12 grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="relative rounded-2xl">
+                    <img class="w-full h-80" src="./Images/maldives.png" alt="">
+                    <span class="absolute rounded-2xl inset-0 bg-gradient-to-b from-black to-white opacity-20"></span>
+                    <p
+                        class="absolute top-2/4 left-2/4 translate-x-[-50%] translate-y-[-50%] text-white text-3xl font-extrabold ">
+                        Maldives</p>
+                </div>
+                <div class="relative rounded-2xl">
+                    <img class="w-full h-80" src="./Images/indonesia.png" alt="">
+                    <div class=" absolute rounded-2xl inset-0 bg-gradient-to-b from-black to-white opacity-20"></div>
+                    <p
+                        class=" absolute top-2/4 left-2/4  translate-x-[-50%] translate-y-[-50%] text-white text-3xl font-extrabold">
+                        Indonesia</p>
+                </div>
+            </div>
+            <div class="mt-12 grid grid-cols-1 md:grid-cols-4 gap-6">
+                <div class="relative rounded-2xl">
+                    <img class="w-full h-72" src="./Images/srilanka.png" alt="">
+                    <span class="absolute rounded-2xl inset-0 bg-gradient-to-b from-black to-white opacity-20"></span>
+                    <p
+                        class="absolute top-2/4 left-2/4 translate-x-[-50%] translate-y-[-50%] text-white text-3xl font-extrabold">
+                        Srilanka</p>
+                </div>
+                <div class=" md:col-span-2 relative rounded-2xl">
+                    <img class="w-full h-72" src="./Images/north-america.png" alt="">
+                    <span class="absolute rounded-2xl inset-0 bg-gradient-to-b from-black to-white opacity-20"></span>
+                    <p
+                        class="absolute top-2/4 left-2/4 translate-x-[-50%] translate-y-[-50%] text-white text-3xl font-extrabold">
+                        North America</p>
+                </div>
+                <div class="relative rounded-2xl">
+                    <img class="w-full h-72" src="./Images/kashmir.png" alt="">
+                    <span class="absolute rounded-2xl inset-0 bg-gradient-to-b from-black to-white opacity-20"></span>
+                    <p
+                        class="absolute top-2/4 left-2/4 translate-x-[-50%] translate-y-[-50%] text-white text-3xl font-extrabold">
+                        Kashmir</p>
+                </div>
+            </div>
+            <div class="mt-12 grid grid-cols-1 md:grid-cols-5 gap-6">
+                <div class="relative md:col-span-2 rounded-2xl">
+                    <img class="w-full h-80" src="./Images/bangladesh.png" alt="">
+                    <span class="absolute rounded-2xl inset-0 bg-gradient-to-b from-black to-white opacity-20"></span>
+                    <p
+                        class="absolute top-2/4 left-2/4 translate-x-[-50%] translate-y-[-50%] text-white text-3xl font-extrabold ">
+                        Bangladesh</p>
+                </div>
+                <div class="relative md:col-span-3 rounded-2xl">
+                    <img class="w-full h-80" src="./Images/bandarban.png" alt="">
+                    <div class=" absolute rounded-2xl inset-0 bg-gradient-to-b from-black to-white opacity-20"></div>
+                    <p
+                        class=" absolute top-2/4 left-2/4  translate-x-[-50%] translate-y-[-50%] text-white text-3xl font-extrabold">
+                        Bandarban</p>
+                </div>
+            </div>
+        </section>
+    </main>
 </body>
+
 </html>
