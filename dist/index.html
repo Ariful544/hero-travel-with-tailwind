@@ -176,9 +176,9 @@
                 <h3 class="text-4xl font-extrabold mb-6">Deals & Discounts</h3>
                 <p class="text-neutral-500">Dolor sit amet consectetur. Diam volutpat neque habitasse pharetra odio sit massa.<br> Sodales dictumst nec nibh pellentesque.</p>
             </div>
-            <div class="bg-[url('./images/seabeach.png')] bg-center bg-cover h-[500px] w-full mt-12 rounded-2xl">
-                <div class="bg-white shadow-lg bg-opacity-80 w-1/2 h-96 rounded-2xl float-end m-14 p-12">
-                    <div class="flex gap-6">
+            <div class="bg-[url('./images/seabeach.png')] bg-center bg-cover h-[500px] w-full flex md:justify-end mt-12 rounded-2xl">
+                <div class="bg-white shadow-lg bg-opacity-80 md:w-1/2 md:min-h-96 rounded-2xl md:m-14 m-8 p-12">
+                    <div class="flex md:flex-row flex-col md:gap-6 gap-1">
                         <div class="text-zinc-600"><i class="fa-solid fa-clock px-2 text-orange-600"></i> 7 Day / 6 Night</div>
                         <div class="text-zinc-600"><i class="fa-solid fa-users-line px-2 text-orange-600"></i> Max : 10</div>
                         <div class="text-zinc-600"><i class="fa-solid fa-location-dot px-2 text-orange-600"></i> Malaysia</div>
@@ -189,9 +189,9 @@
                     <button class="btn-primary">Book Now</button>
                 </div>
             </div>
-            <div class="bg-[url('./images/seabeach2.png')] bg-center bg-cover h-[500px] w-full mt-12 rounded-2xl">
-                <div class="bg-white shadow-lg bg-opacity-80 w-1/2 h-96 rounded-2xl float-start m-14 p-12">
-                    <div class="flex gap-6">
+            <div class="bg-[url('./images/seabeach2.png')] bg-center bg-cover h-[500px] w-full flex md:justify-start mt-12 rounded-2xl">
+                <div class="bg-white shadow-lg bg-opacity-80 md:w-1/2 min-h-96 rounded-2xl md:m-14 m-8 p-12">
+                    <div class="flex md:flex-row flex-col md:gap-6 gap-1">
                         <div class="text-zinc-600"><i class="fa-solid fa-clock px-2 text-orange-600"></i> 7 Day / 6 Night</div>
                         <div class="text-zinc-600"><i class="fa-solid fa-users-line px-2 text-orange-600"></i> Max : 10</div>
                         <div class="text-zinc-600"><i class="fa-solid fa-location-dot px-2 text-orange-600"></i> Malaysia</div>
@@ -202,9 +202,9 @@
                     <button class="btn-primary">Book Now</button>
                 </div>
             </div>
-            <div class="bg-[url('./images/seabeach.png')] bg-center bg-cover h-[500px] w-full mt-12 rounded-2xl">
-                <div class="bg-white shadow-lg bg-opacity-80 w-1/2 h-96 rounded-2xl float-end m-14 p-12">
-                    <div class="flex gap-6">
+            <div class="bg-[url('./images/seabeach.png')] bg-center bg-cover h-[500px] w-full flex md:justify-end mt-12 rounded-2xl">
+                <div class="bg-white shadow-lg bg-opacity-80 md:w-1/2 min-h-96 rounded-2xl md:m-14 m-8 p-12">
+                    <div class="flex md:flex-row flex-col md:gap-6 gap-1">
                         <div class="text-zinc-600"><i class="fa-solid fa-clock px-2 text-orange-600"></i> 7 Day / 6 Night</div>
                         <div class="text-zinc-600"><i class="fa-solid fa-users-line px-2 text-orange-600"></i> Max : 10</div>
                         <div class="text-zinc-600"><i class="fa-solid fa-location-dot px-2 text-orange-600"></i> Malaysia</div>
@@ -219,7 +219,57 @@
                 <button class=" capitalize btn-primary w-48 mt-12">See all packages</button>
             </div>
           </section>
+          <!-- bandarban section -->
+           <section class="max-w-screen-xl min-h-[500px] md:mx-auto mt-6 md:mt-24 mx-4 grid md:grid-cols-2 grid-cols-1 gap-8">
+            <div>
+                <h3 class=" text-4xl font-extrabold leading-relaxed">A Simple Perfect Place<br> To Get Lost</h3>
+                <p class=" text-zinc-600 my-6">Amet consectetur. Vulputate commodo felis molestie risus  ornare nulla amet et. Libero commodo sagittis dignissim adipiscing quis. </p>
+                <ul>
+                    <li class=" list-disc ml-3 text-neutral-900 mb-4">Adipiscing ornare pellentesque mauris volutpat tortor vitae platea porta lacus. Lectus suspendisse nullam.</li>
+                    <li class=" list-disc ml-3 text-neutral-900">Adipiscing ornare pellentesque mauris volutpat tortor vitae platea porta lacus. Lectus suspendisse nullam.</li>
+                </ul>
+                <button class="btn-primary mt-8">See More</button>
+            </div>
+            <div class="mt-10">
+                <video class=" w-full shadow-sm shadow-slate-700 border border-solid p-2 rounded-2xl" src="./bandarban2.mp4" controls></video>
+            </div>
+           </section>
+           <!-- newsletter -->
+           <section class="max-w-screen-xl md:min-h-[500px] min-h-screen md:mx-auto mt-6 md:mt-4 mx-4 grid md:grid-cols-2 grid-cols-1 gap-8">
+                <div class="bordered rounded-2xl py-14 px-10">
+                    <h4 class="text-2xl">Newsletter</h4>
+                    <p class=" text-zinc-600 my-5">Get your daily dose of travel news & tips. Sign up today!</p>
+                    <hr class="mb-8">
+                    <form action="" class="flex flex-col w-full gap-8">
+                        <input class=" bg-neutral-400 opacity-50 rounded-lg py-4 outline-none text-black text-lg placeholder:text-white px-4" type="text" placeholder="Enter your name">
+                        <input class=" bg-neutral-400 opacity-50 rounded-lg py-4 outline-none text-black text-lg placeholder:text-white px-4" type="email" placeholder="Enter your name">
+                        <button class=" bg-orange-600 rounded-lg py-4 text-white font-extrabold text-xl hover:bg-orange-800">Subscribe</button>
+                    </form>
+                </div>
+                <div class="bg-[url('./images/hill.png')] bg-no-repeat bg-cover bg-center w-full h-[500px] rounded-2xl text-center relative">
+                    <div class=" max-w-80 min-h-32 bg-orange-600 text-white rounded-2xl pt-5 px-5 -rotate-[25deg] absolute bottom-14 right-3">
+                        <p class=" text-2xl ">Travel.com</p>
+                        <h3 class=" text-4xl font-extrabold">Save up to 70%</h3>
+                    </div>
+                </div>
+            </section>
     </main>
+    <footer class=" max-w-screen-2xl min-h-[500px] mt-24 bg-neutral-900 bg-opacity-10 flex flex-col justify-center  items-center">
+        <div class="flex flex-col items-center border-b-2 border-neutral-400 pb-12">
+            <div class="flex items-center gap-4">
+                <img width="w-full" src="./Images/logo.png" alt="">
+                <h1 class="md:text-2xl text-xl font-extrabold">Hero <span class=" text-orange-600">Travel</span></h1>
+            </div>
+            <p class="text-center my-5 text-zinc-600">Lorem ipsum dolor sit amet consectetur. Nulla sit viverra morbi vitae blandit orci potenti vulputate. Leo<br> erat maecenas vitae elementum ultricies nullam. </p>
+            <div class="flex gap-6 text-2xl">
+                <a class="hover:text-orange-600 cursor-pointer" href=""><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                <a class="hover:text-orange-600 cursor-pointer" href=""><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                <a class="hover:text-orange-600 cursor-pointer" href=""><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                <a class="hover:text-orange-600 cursor-pointer" href=""><i class="fa fa-pinterest" aria-hidden="true"></i></a>
+            </div>
+        </div>
+        <p class="mt-12 text-zinc-600">2024, All Rights Reserved.</p>
+    </footer>
 </body>
 
 </html>
